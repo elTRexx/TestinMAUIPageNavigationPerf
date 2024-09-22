@@ -17,14 +17,16 @@ namespace TestinMAUIPageNavigationPerf.Sources.ViewModels
       if (MauiProgram.MainPage != default)
         MauiProgram.MainPage.SelectedItemViewModel = this;
 
-      try
-      {
-        await Shell.Current.GoToAsync(AppShell.SELECT_PAGE_ROUTE_KEY);
-      }
-      catch (Exception e)
-      {
-        throw e;
-      }
+      await Shell.Current.GoToAsync(AppShell.SELECT_PAGE_ROUTE_KEY);
+
+      //try
+      //{
+      //  await Shell.Current.GoToAsync(AppShell.SELECT_PAGE_ROUTE_KEY);
+      //}
+      //catch (Exception e)
+      //{
+      //  throw e;
+      //}
     }
 
     public ItemViewModel(string title)

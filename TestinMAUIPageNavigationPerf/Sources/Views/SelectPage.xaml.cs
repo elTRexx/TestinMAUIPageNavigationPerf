@@ -5,12 +5,13 @@ public partial class SelectPage : ContentPage
   public SelectPage()
   {
     InitializeComponent();
+    //BindingContext = MauiProgram.MainPage?.SelectedItemViewModel;
   }
 
-  protected override void OnNavigatedTo(NavigatedToEventArgs args)
+  protected override async void OnNavigatedTo(NavigatedToEventArgs args)
   {
     base.OnNavigatedTo(args);
-    Task.Delay(1).Wait();
+    await Task.Delay(500);
     BindingContext = MauiProgram.MainPage?.SelectedItemViewModel;
   }
 }
