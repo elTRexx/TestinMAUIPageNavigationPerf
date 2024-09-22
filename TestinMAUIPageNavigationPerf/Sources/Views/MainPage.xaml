@@ -6,7 +6,15 @@
              x:Class="TestinMAUIPageNavigationPerf.Sources.Views.MainPage"
              x:DataType="viewmodels:MainPageViewModel">
 
-    <ScrollView>
+  <Grid HorizontalOptions="Center" VerticalOptions="Center">
+    <Button
+      Text="Select item"
+      TextColor="AliceBlue"
+      FontSize="Header"
+      FontAttributes="Bold"
+      Command="{Binding SelectedItemViewModel.SelectItemCommand}"/>
+  </Grid>
+    <!--<ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25"
@@ -49,6 +57,6 @@
         </CollectionView.ItemTemplate>
       </CollectionView>
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
 
 </ContentPage>

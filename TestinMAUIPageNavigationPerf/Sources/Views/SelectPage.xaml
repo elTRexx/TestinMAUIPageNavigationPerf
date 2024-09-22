@@ -6,9 +6,11 @@
              xmlns:viewmodels="clr-namespace:TestinMAUIPageNavigationPerf.Sources.ViewModels"
              Title="SelectPage"
              x:DataType="viewmodels:ItemViewModel">
-    <VerticalStackLayout
+  <Label Text="TEST!"/>
+  <!--<Grid
       HorizontalOptions="Center"
-      VerticalOptions="Center">
+      VerticalOptions="Center"
+      RowDefinitions="*">
     <Border
       Stroke="DodgerBlue"
       BackgroundColor="Beige"
@@ -16,7 +18,7 @@
       StrokeShape="RoundRectangle 20"
       MinimumHeightRequest="300"
       MaximumWidthRequest="300">
-      <Grid RowDefinitions="auto">
+      <Grid RowDefinitions="auto, *">
         <Label 
           Grid.Row="0"
           Margin="10"
@@ -27,7 +29,7 @@
           HorizontalTextAlignment="Center"
           HorizontalOptions="Center"
           VerticalOptions="Center"/>
-        <!--<CollectionView Grid.Row="1"                                
+        <CollectionView Grid.Row="1"                                
           ItemsSource="{Binding Numbers}"
         >
           <CollectionView.ItemsLayout>
@@ -61,8 +63,67 @@
               </Border>
             </DataTemplate>
           </CollectionView.ItemTemplate>
-        </CollectionView>-->
+        </CollectionView>
       </Grid>
     </Border>
-    </VerticalStackLayout>
+    </Grid>-->
+  <!--<VerticalStackLayout
+  HorizontalOptions="Center"
+  VerticalOptions="Center">
+    <Border
+  Stroke="DodgerBlue"
+  BackgroundColor="Beige"
+  StrokeThickness="5"
+  StrokeShape="RoundRectangle 20"
+  MinimumHeightRequest="300"
+  MaximumWidthRequest="300">
+      <Grid RowDefinitions="auto">
+        <Label 
+      Grid.Row="0"
+      Margin="10"
+      Text="{Binding Title}"
+      FontSize="Title"
+      FontAttributes="Bold"
+      TextColor="Goldenrod"
+      HorizontalTextAlignment="Center"
+      HorizontalOptions="Center"
+      VerticalOptions="Center"/>
+        <CollectionView Grid.Row="1"                                
+      ItemsSource="{Binding Numbers}"
+    >
+          <CollectionView.ItemsLayout>
+            <GridItemsLayout 
+          Orientation="Vertical" 
+          Span="5"                       
+          HorizontalItemSpacing="1" 
+          VerticalItemSpacing="1"/>
+          </CollectionView.ItemsLayout>
+          <CollectionView.ItemTemplate>
+            <DataTemplate>
+              <Border
+            BackgroundColor="WhiteSmoke"
+            Stroke="darkred"
+            StrokeThickness="3"
+            MaximumHeightRequest="38"
+            MinimumHeightRequest="38"
+            MaximumWidthRequest="36"
+            MinimumWidthRequest="36"
+          >
+                <Label
+                Text="{Binding .}"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="Red"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+              />
+              </Border>
+            </DataTemplate>
+          </CollectionView.ItemTemplate>
+        </CollectionView>
+      </Grid>
+    </Border>
+  </VerticalStackLayout>-->
 </ContentPage>
