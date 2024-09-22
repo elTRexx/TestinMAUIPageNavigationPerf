@@ -7,7 +7,7 @@ public partial class SelectPage : ContentPage
   public SelectPage(MainPageViewModel mainPageViewModel)
   {
     InitializeComponent();
-    BindingContext = mainPageViewModel.SelectedItemViewModel;
+    //BindingContext = mainPageViewModel.SelectedItemViewModel;
     //BindingContext = MauiProgram.MainPage?.SelectedItemViewModel;
   }
 

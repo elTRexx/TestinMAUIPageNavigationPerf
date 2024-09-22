@@ -11,7 +11,7 @@ namespace TestinMAUIPageNavigationPerf.Sources.ViewModels
 
     public MainPageViewModel()
     {
-      SelectedItemViewModel = new("Ten");
+      SelectedItemViewModel = new(/*"Ten"*/);
       //Items =
       //[
       //  new("One"),
