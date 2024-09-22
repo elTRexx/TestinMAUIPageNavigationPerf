@@ -4,15 +4,18 @@
              xmlns:views="clr-namespace:TestinMAUIPageNavigationPerf.Sources.Views"
              xmlns:viewmodels="clr-namespace:TestinMAUIPageNavigationPerf.Sources.ViewModels"
              x:Class="TestinMAUIPageNavigationPerf.Sources.Views.MainPage"
-             x:DataType="viewmodels:MainPageViewModel">
-
+             >
+  <!--x:DataType="viewmodels:MainPageViewModel"-->
+  <!--<ContentPage.BindingContext>
+    <viewmodels:MainPageViewModel x:Name="Page"/>
+  </ContentPage.BindingContext>-->
   <Grid HorizontalOptions="Center" VerticalOptions="Center">
     <Button
       Text="Select item"
       TextColor="AliceBlue"
       FontSize="Header"
       FontAttributes="Bold"
-      Command="{Binding SelectedItemViewModel.SelectItemCommand}"/>
+      />
   </Grid>
     <!--<ScrollView>
         <VerticalStackLayout

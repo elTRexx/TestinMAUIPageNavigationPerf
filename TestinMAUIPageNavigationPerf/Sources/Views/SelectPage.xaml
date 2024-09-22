@@ -5,7 +5,8 @@
              xmlns:views="clr-namespace:TestinMAUIPageNavigationPerf.Sources.Views"
              xmlns:viewmodels="clr-namespace:TestinMAUIPageNavigationPerf.Sources.ViewModels"
              Title="SelectPage"
-             x:DataType="viewmodels:ItemViewModel">
+             >
+  <!--x:DataType="viewmodels:ItemViewModel"-->
   <Label Text="TEST!"/>
   <!--<Grid
       HorizontalOptions="Center"
